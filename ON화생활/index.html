@@ -7,13 +7,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
 </head>
 <style>
+
+  #headercover{
+    display: block;
+    align-content: center;
+  }
+
   #header{
     display: grid;
-    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-columns: 1fr 321px 215px 215px 1fr;
     padding: 50px;
-    border-bottom: 2px solid gray;
   }
-  div{
+  #header div{
     height: 100%;
     display: table;
   }
@@ -29,77 +34,54 @@
     font-family: 'Nanum Myeongjo', serif;
     color: gray;
     text-decoration: none;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  p{
-    font-family: 'Nanum Myeongjo', serif;
-    color: white;
-    text-align: center;
+    text-align: right;
     display: table-cell;
     vertical-align: middle;
   }
   #para{
-    width: 965px;
+    position: relative;
     display: grid;
-    grid-template-rows: 0.5fr 1fr 0.5fr 5fr 1fr 1fr 2fr;
-    background-image: url("background2.jpg");
-    background-size: 100%;
+    min-width: 850px;
+    height: 1000px;
+    grid-template-rows: 1fr 6fr 1fr ;
+    background-image: url("background.jpg");
+    background-size: 750px 1000px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  p{
+    font-family: 'Nanum Myeongjo', serif;
+    color: gray;
+    text-align: center;
+    margin: 50px;
   }
 </style>
 
 <body>
-
+  <div id = 'headercover'>
   <div id = 'header'>
+    <div></div>
     <div><h1><a href="index.html" id = T> 온화생활.</a></h1></div>
     <div><a href="ON화생활소개.html"> ON화생활 소개 </a></div>
     <div><a href="ON화생활체험.html"> ON화생활 체험하기 </a></div>
+    <div></div>
   </div>
+  </div>
+
   <div id = 'para'>
-    <br>
-    <div><p>
-      전시회를 즐기지만 매번 비싼 가격에 망설이게 돼요. <br>
-      무서운 코로나 시대, 사람이 많이 모이는 곳은 불안해요! <br>
+
+    <p>
+      전시회를 좋아하지만 매번 비싼 가격에 망설이게 돼요. <br>
+      조심하고 또 조심해야 할 지금, 사람이 많이 모이는 곳은 불안해요! <br>
       집돌이, 집순이. 집에서 즐길 색다른 무언가가 필요해요!
-    </p></div>
-    <br>
-    <div id = "video"><p>
-      <iframe width=40% height="80%"
-      src="https://www.youtube.com/embed/oOOY6GbV9Ks" frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
-    </p></div>
-    <br>
-    <div><p>
+    </p>
+    <p></p>
+    <p>
       걱정하지 마세요.<br>
       여러분의 고민을 해결해 줄 ON화생활이 있으니까요. <br>
-      모두들 온라인 전시회 플랫폼 ON화생활에서 만나요!
-    </p></div>
-    <br>
+      온라인 전시회 플랫폼 ON화생활에서 만나요!
+    </p>
+
   </div>
-
-
-  <div id="disqus_thread"></div>
-  <script>
-
-  /**
-  *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-  *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-  /*
-  var disqus_config = function () {
-  this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-  this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-  };
-  */
-  (function() { // DON'T EDIT BELOW THIS LINE
-  var d = document, s = d.createElement('script');
-  s.src = 'https://onhwasaenghwal.disqus.com/embed.js';
-  s.setAttribute('data-timestamp', +new Date());
-  (d.head || d.body).appendChild(s);
-  })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</body>
 
 </html>
